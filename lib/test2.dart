@@ -26,11 +26,7 @@ class Test2Screen extends StatelessWidget {
 final MyPreference preference = MyPreference()
   ..cancelButton = ({required VoidCallback? onPressed, required Widget child}) {
     return TextButton(
-        child: Text('reset'),
-        onPressed: () {
-          if (onPressed != null) onPressed();
-          preference.setChildLibraryState(() {
-            preference.childLibraryCounter = 0;
-          });
-        });
+      child: Text('reset'),
+      onPressed: onPressed,
+    );
   };

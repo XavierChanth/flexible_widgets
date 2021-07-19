@@ -9,6 +9,8 @@ Widget defaultTextButtonBuilder({required Widget child, void Function()? onPress
   );
 }
 
+// * Alternative with Context
+
 Widget defaultTextButtonBuilderWithContext(
     {required Widget child, void Function()? onPressed}) {
   return Builder(
