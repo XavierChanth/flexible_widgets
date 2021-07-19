@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'widgets/index.dart';
+import 'library_widgets/index.dart';
 
 // * This code would be part of the new library created as a parent
 // * to manage other libraries
