@@ -1,4 +1,4 @@
-import 'package:flexible_widgets/test1/parent_library.dart';
+import 'package:flexible_widgets/test1/parent_lib/parent_library.dart';
 import 'package:flutter/material.dart';
 
 // * This is the code added to manage customization in other libraries

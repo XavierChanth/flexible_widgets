@@ -1,5 +1,5 @@
-import 'package:flexible_widgets/test2/app.dart';
-import 'package:flexible_widgets/test2/child_library.dart';
+import 'package:flexible_widgets/test2/app/app.dart';
+import 'package:flexible_widgets/test2/child_lib/child_library.dart';
 import 'package:flutter/material.dart';
 
 class Test2Screen extends StatelessWidget {

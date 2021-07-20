@@ -1,7 +1,7 @@
-import 'package:flexible_widgets/test2.dart';
-import 'package:flexible_widgets/test3.dart';
+import 'package:flexible_widgets/test2/test2.dart';
+import 'package:flexible_widgets/test3/test3.dart';
 import 'package:flutter/material.dart';
-import 'test1.dart';
+import 'test1/test1.dart';
 
 void main() {
   runApp(MyApp());

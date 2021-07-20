@@ -1,5 +1,5 @@
-import 'package:flexible_widgets/test3/app.dart';
-import 'package:flexible_widgets/test3/child_library.dart';
+import 'package:flexible_widgets/test3/app/app.dart';
+import 'package:flexible_widgets/test3/child_lib/child_library.dart';
 import 'package:flutter/material.dart';
 
 class Test3Screen extends StatelessWidget {

@@ -1,6 +1,6 @@
 
-import 'package:flexible_widgets/test1/child_library.dart';
-import 'package:flexible_widgets/test1/parent_library.dart';
+import 'package:flexible_widgets/test1/child_lib/child_library.dart';
+import 'package:flexible_widgets/test1/parent_lib/parent_library.dart';
 import 'package:flutter/material.dart';
 
 // * This is the code implemented in apps to override the defaults

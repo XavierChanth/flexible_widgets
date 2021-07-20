@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'parent_library.dart';
-export 'parent_library.dart';
+import '../parent_lib/parent_library.dart';
+export '../parent_lib/parent_library.dart';
 
 typedef Widget ButtonBarLayoutBuilder(
     {required Widget acceptButton, required Widget cancelButton});

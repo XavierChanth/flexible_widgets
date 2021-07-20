@@ -1,5 +1,5 @@
-import 'parent_lib/button_builder.dart';
-export 'parent_lib/button_builder.dart';
+import 'button_builder.dart';
+export 'button_builder.dart';
 
 class AtWidgetPreference {
   ButtonBuilder? _primaryButtonBuilder;

@@ -1,4 +1,4 @@
-import 'package:flexible_widgets/test3/child_library.dart';
+import 'package:flexible_widgets/test3/child_lib/child_library.dart';
 import 'package:flutter/material.dart';
 
 AtWidgetPreference atWidgetPreference = AtWidgetPreference()

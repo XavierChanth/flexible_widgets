@@ -1,10 +1,10 @@
-import 'package:flexible_widgets/test2/child_library_widgets/layout_builder.dart';
-import 'package:flexible_widgets/test2/parent_library.dart';
-import 'package:flexible_widgets/test2/parent_library_widgets/button_builder.dart';
+import 'package:flexible_widgets/test2/child_lib/layout_builder.dart';
+import 'package:flexible_widgets/test2/parent_lib/parent_library.dart';
+import 'package:flexible_widgets/test2/parent_lib/button_builder.dart';
 import 'package:flutter/widgets.dart';
 
-export 'package:flexible_widgets/test2/parent_library.dart';
-export 'package:flexible_widgets/test2/parent_library_widgets/button_builder.dart';
+export 'package:flexible_widgets/test2/parent_lib/parent_library.dart';
+export 'package:flexible_widgets/test2/parent_lib/button_builder.dart';
 
 // * New Mixin that separates the logic from the UI
 mixin ChildLibrary1Preference on AtWidgetPreference {
