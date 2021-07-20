@@ -1,4 +1,5 @@
 import 'package:flexible_widgets/test2.dart';
+import 'package:flexible_widgets/test3.dart';
 import 'package:flutter/material.dart';
 import 'test1.dart';
 
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
           MyHomePage.id: (_) => MyHomePage(title: 'Flexible Widgets Demo'),
           Test1Screen.id: (_) => Test1Screen(),
           Test2Screen.id: (_) => Test2Screen(),
+          Test3Screen.id: (_) => Test3Screen(),
         });
   }
 }
@@ -56,7 +58,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   Navigator.of(context).pushNamed(Test2Screen.id);
                 },
-              )
+              ),
+              TextButton(
+                child: Text("Test 3"),
+                onPressed: () {
+                  Navigator.of(context).pushNamed(Test3Screen.id);
+                },
+              ),
             ],
           ),
         ),
