@@ -18,34 +18,28 @@ class MyLibraryButtonBar extends StatefulWidget {
       ButtonBarLayoutBuilder? layout,
       Key? key})
       : _preference = preference ?? AtWidgetPreference(),
-        layout = layout ?? defaultBuilder,
+        _layout = layout ?? defaultBuilder,
         super(key: key);
 
   final AtWidgetPreference _preference;
-  final ButtonBarLayoutBuilder layout;
+  final ButtonBarLayoutBuilder _layout;
 
   @override
-  _MyLibraryButtonBarState createState() =>
-      _MyLibraryButtonBarState(_preference, layout);
+  _MyLibraryButtonBarState createState() => _MyLibraryButtonBarState();
 }
 
 class _MyLibraryButtonBarState extends State<MyLibraryButtonBar> {
-  AtWidgetPreference preference;
-  ButtonBarLayoutBuilder layout;
-
-  _MyLibraryButtonBarState(this.preference, this.layout);
-
   _doAccept() => print("Accept Pressed");
   _doCancel() => print("Cancel pressed");
 
   @override
   Widget build(BuildContext context) {
-    return layout(
-      acceptButton: preference.primaryButtonBuilder(
+    return widget._layout(
+      acceptButton: widget._preference.primaryButtonBuilder(
         child: Text("Accept"),
         onPressed: _doAccept,
       ),
-      cancelButton: preference.secondaryButtonBuilder(
+      cancelButton: widget._preference.secondaryButtonBuilder(
         child: Text("Cancel"),
         onPressed: _doCancel,
       ),
