@@ -12,7 +12,7 @@ AtWidgetPreference atWidgetPreference = AtWidgetPreference()
 
     // * You can add wrappers around the widget as well.
     return Container(
-      margin: EdgeInsets.all(20),
+      margin: EdgeInsets.all(40),
       child: TextButton(
         // * App developers can choose not to use the default child
         child: Text("Confirm", style: TextStyle(color: Colors.white)),
@@ -27,6 +27,7 @@ AtWidgetPreference atWidgetPreference = AtWidgetPreference()
 ButtonBarLayoutBuilder layoutBuilder =
     ({required acceptButton, required cancelButton}) {
   return Row(
+    mainAxisAlignment: MainAxisAlignment.center,
     children: [
       cancelButton,
       acceptButton,
