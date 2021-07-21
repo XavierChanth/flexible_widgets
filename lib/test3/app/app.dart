@@ -3,23 +3,21 @@ import 'package:flutter/material.dart';
 
 AtWidgetPreference atWidgetPreference = AtWidgetPreference()
   ..primaryButtonBuilder = ({required child, onPressed}) {
-    // * App developers can extend the onPressed function,
-    // * or completely change it if needed
-    void Function() myOnPressed = () {
-      print("App added logic to onPressed!");
-      if (onPressed != null) onPressed();
-    };
-
-    // * You can add wrappers around the widget as well.
+    // * You can add wrappers around the widget.
     return Container(
       margin: EdgeInsets.all(40),
       child: TextButton(
         // * App developers can choose not to use the default child
         child: Text("Confirm", style: TextStyle(color: Colors.white)),
         style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all<Color>(Colors.green),
+          backgroundColor: MaterialStateProperty.all<Color>(Colors.yellow),
         ),
-        onPressed: myOnPressed,
+        onPressed: () {
+          // * App developers can extend the onPressed function,
+          // * or completely change it if needed.
+          print("App added logic to onPressed!");
+          if (onPressed != null) onPressed();
+        },
       ),
     );
   };
